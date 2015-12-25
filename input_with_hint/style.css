@@ -1,0 +1,64 @@
+#main {
+	width:645px;
+	margin:auto;
+}
+
+.regItem {
+	float:left;
+	width:645px;
+}
+.regLeftItem {
+	width:90px;
+	text-align:right;
+	float:left;
+	position:relative;
+	top:5px;
+}
+.regRightItem {
+	float:left;
+}
+
+.star {
+	color:red;
+}
+.txtTips {
+	color:gray;
+	font-size:12px;
+}
+.errorTips {
+	color:red;
+	font-size:12px;
+	display:none;
+}
+
+/*Magic*/
+.ipt {
+	width:193px;
+	padding:4px 5px;
+	border:#ABABAB 1px solid;
+	box-shadow:2px 2px 3px #EDEDED inset;
+	font-size:14px;
+	font-weight:bold;
+	border-radius:3px;
+}
+.ipt:hover {
+	border-color:#7b7b7b;
+}
+.ipt:focus {
+	border-color:#3061C6;
+}
+.iptErr {
+	border-color:#C66161;
+	background-color:#FBE2E2;
+	color:#C00;
+	box-shadow:2px 2px 3px #EDEDED inset;
+}
+
+/*Real magic*/
+
+.ipt:hover ~ .tips > .txtTips {
+	color:black;
+}
+.ipt:focus ~ .tips > .txtTips {
+	color:black;
+}
